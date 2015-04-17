@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /**
  * Created by alexandraqin on 4/14/15.
  */
@@ -9,6 +11,7 @@ public class Methods {
     System.out.println(toLowerCase());
     System.out.println(isMultiple(3, 12));//will return TRUE because 12 is a multiple of 3
     System.out.println(isMultiple(3, 13));//will return FALSE because 13 is not a multiple of 3
+    System.out.println(randomInt(2, 25));
 
 
   }
@@ -53,7 +56,7 @@ public class Methods {
 //  ex: prettyInteger(4) prints "**** 4 ****"
 //  prettyInteger(10) prints "********** 10 **********"
 //  Hint: this method does not return anything!
-//todo: this problem prettyInteger
+//todo: finish this problem prettyInteger
   public static void prettyInteger(int n) {
     String asterisk = "*";
     for (int i = 0; i <= n; i++) {
@@ -61,4 +64,15 @@ public class Methods {
     }
     System.out.println();
   }
+
+//  PROBLEM #6: Random
+//  Write a method called random that takes 2 ints as parameters and returns a random int within that range.
+//  ex: random(1, 100) returns a random int between 1 and 100
+//todo: finish this problem, "Random"
+  public static int randomInt(int a, int b) {
+
+    return a;
+  }
+
+
 }
