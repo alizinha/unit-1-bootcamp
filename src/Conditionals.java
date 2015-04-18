@@ -155,9 +155,9 @@ public class Conditionals {
 //  evenlySpaced(4, 6, 2) → true
 //  evenlySpaced(4, 6, 3) → false
   public static boolean evenlySpaced (int a, int b, int c) {
-    int big = 0;
-    int medium = 0;
-    int small = 0;
+    int big;
+    int medium;
+    int small;
 
     if ((a > b) && (a > c))
     {
@@ -166,8 +166,7 @@ public class Conditionals {
       {
         medium = b;
         small = c;
-      }
-      else
+      } else
       {
         medium = c;
         small = b;
@@ -175,13 +174,10 @@ public class Conditionals {
     } else if ((b > a) && (b > c))
     {
       big = b;
-      if (a > c)
-      {
+      if (a > c) {
         medium = a;
         small = c;
-      }
-      else
-      {
+      } else {
         medium = c;
         small = a;
       }
